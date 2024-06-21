@@ -6,7 +6,9 @@
     <meta charset="utf-8">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
-    <link rel="stylesheet" href="colorbox/example3/colorbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/example3/colorbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
 </head>
 
 <body>
@@ -27,15 +29,15 @@
     <main>
         <h3 class="titulo-principal">A melhor pizza da região!</h3>
         <div>
-            <a class="colorbox" href="imagens/calabreza.jpg"><img src="imagens/calabreza.jpg" alt="Calabresa"></a>
-            <a class="colorbox" href="imagens/portuguesa.jpg"><img src="imagens/portuguesa.jpg" alt="Portuguesa"></a>
-            <a class="colorbox" href="imagens/siciliana.jpg"><img src="imagens/siciliana.jpg" alt="Siciliana"></a>
-            <a class="colorbox" href="imagens/pizza01.jpg"><img src="imagens/pizza01.jpg" alt="Pizza01"></a>
-            <a class="colorbox" href="imagens/pizza02.jpg"><img src="imagens/pizza02.jpg" alt="Pizza02"></a>
-            <a class="colorbox" href="imagens/pizza03.jpg"><img src="imagens/pizza03.jpg" alt="Pizza03"></a>
-            <a class="colorbox" href="imagens/pizza04.jpg"><img src="imagens/pizza04.jpg" alt="Pizza04"></a>
-            <a class="colorbox" href="imagens/pizza05.jpg"><img src="imagens/pizza05.jpg" alt="Pizza05"></a>
-            <a class="colorbox" href="imagens/pizza07.jpg"><img src="imagens/pizza07.jpg" alt="Pizza07"></a>
+            <a class="group1" href="imagens/calabreza.jpg"><img src="imagens/calabreza.jpg" alt="Calabresa"></a>
+            <a class="group1" href="imagens/portuguesa.jpg"><img src="imagens/portuguesa.jpg" alt="Portuguesa"></a>
+            <a class="group1" href="imagens/siciliana.jpg"><img src="imagens/siciliana.jpg" alt="Siciliana"></a>
+            <a class="group1" href="imagens/pizza01.jpg"><img src="imagens/pizza01.jpg" alt="Pizza01"></a>
+            <a class="group1" href="imagens/pizza02.jpg"><img src="imagens/pizza02.jpg" alt="Pizza02"></a>
+            <a class="group1" href="imagens/pizza03.jpg"><img src="imagens/pizza03.jpg" alt="Pizza03"></a>
+            <a class="group1" href="imagens/pizza04.jpg"><img src="imagens/pizza04.jpg" alt="Pizza04"></a>
+            <a class="group1" href="imagens/pizza05.jpg"><img src="imagens/pizza05.jpg" alt="Pizza05"></a>
+            <a class="group1" href="imagens/pizza07.jpg"><img src="imagens/pizza07.jpg" alt="Pizza07"></a>
         </div>
 
         <div class="nossos-sabores">
@@ -77,14 +79,11 @@
     <footer>
         <p>Aula do Senac. Declaração de direitos autorais.</p>
     </footer>
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="colorbox/jquery.colorbox.js"></script>
     <script>
-        $(document).ready(function(){
-            $(".colorbox").colorbox({
-                rel: 'colorbox', // cria uma galeria
-                maxWidth: '95%',
-                maxHeight: '95%'
-            });
-        });
+        $('.group1').colorbox()
+
     </script>
 </body>
 
