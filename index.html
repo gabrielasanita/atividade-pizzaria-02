@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Super Pizza</title>
+    <meta charset="utf-8">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="colorbox/example3/colorbox.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><img src="imagens/logotipo.fw.png" alt="Super Pizza" title="Super Pizza"></h1>
+        <h2 class="telefone">Disk entregas:<br>(19) 1234-5678</h2>
+    </header>
+    <nav>
+        <ul class="menu-navegacao">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="banners/pizza02.jpg" alt="banner01">
+    </div>
+    <main>
+        <h3 class="titulo-principal">A melhor pizza da região!</h3>
+        <div>
+            <a class="colorbox" href="imagens/calabreza.jpg"><img src="imagens/calabreza.jpg" alt="Calabresa"></a>
+            <a class="colorbox" href="imagens/portuguesa.jpg"><img src="imagens/portuguesa.jpg" alt="Portuguesa"></a>
+            <a class="colorbox" href="imagens/siciliana.jpg"><img src="imagens/siciliana.jpg" alt="Siciliana"></a>
+            <a class="colorbox" href="imagens/pizza01.jpg"><img src="imagens/pizza01.jpg" alt="Pizza01"></a>
+            <a class="colorbox" href="imagens/pizza02.jpg"><img src="imagens/pizza02.jpg" alt="Pizza02"></a>
+            <a class="colorbox" href="imagens/pizza03.jpg"><img src="imagens/pizza03.jpg" alt="Pizza03"></a>
+            <a class="colorbox" href="imagens/pizza04.jpg"><img src="imagens/pizza04.jpg" alt="Pizza04"></a>
+            <a class="colorbox" href="imagens/pizza05.jpg"><img src="imagens/pizza05.jpg" alt="Pizza05"></a>
+            <a class="colorbox" href="imagens/pizza07.jpg"><img src="imagens/pizza07.jpg" alt="Pizza07"></a>
+        </div>
+
+        <div class="nossos-sabores">
+            <h4 class="subtitulo-principal">Nossos Sabores</h4>
+            <ul class="lista-sabores">
+                <li>À moda da casa</li>
+                <li>Aliche</li>
+                <li>Atum</li>
+                <li>Baiana</li>
+                <li>Bauru</li>
+                <li>Canadense</li>
+                <li>Catupiry</li>
+                <li>Calabresa</li>
+                <li>Escarola</li>
+                <li>Frango</li>
+                <li>Marguerita</li>
+                <li>Mexicana</li>
+                <li>Mussarela</li>
+                <li>Napolitana</li>
+                <li>Palmito</li>
+                <li>Portuguesa</li>
+                <li>Provolone</li>
+                <li>Quatro Queijos</li>
+                <li>Romana</li>
+                <li>Siciliana</li>
+            </ul>
+        </div>
+
+        <div class="historia">
+            <h4 class="subtitulo-principal">Uma casa com historia</h4>
+            <p>
+                <img src="imagens/historia.jpg" alt="História" align="left" class="imagem-historia">
+                Muito famoso em toda a região por sua excelência na qualidade, a nossa pizzaria tem mais de 25 anos de
+                história.<br><br>
+                <a href="quem-somos.html">Conheça</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Aula do Senac. Declaração de direitos autorais.</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $(".colorbox").colorbox({
+                rel: 'colorbox', // cria uma galeria
+                maxWidth: '95%',
+                maxHeight: '95%'
+            });
+        });
+    </script>
+</body>
+
+</html>
